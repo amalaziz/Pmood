@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Pmode
 //
-//  Created by ama alothman on 15/06/1444 AH.
+//  Created by Amal alothman on 15/06/1444 AH.
 //
 
 import SwiftUI
