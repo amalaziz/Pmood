@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  Pmode
+
+  Created by ama alothman on 16/06/1444 AH.
+  
+*/
+
+
+"Hello"="مرحبا";
+
+"Unsure"="غير متاكد";
+
+"Bad"="سيء";
+
+"Okay"="جيد";
+
+"How are you?"="كيف حالك؟";
+
+"Roccmandition for you mood"="اقتراحات من اجل مزاجك";
+
+"Listen to music"="استمع الى الموسيقى";
+
+"Document your moment"="وثق لحظتك";
+
+"Watch a movie"="شاهد فلم";
+
+"Have a bath"="استحم";
+
+"Talk with friends"="تحدث مع صديق";
+
+"Run 30 Min"="اركض ٣٠ دقيقه";
+
+//"We cannot solve problems with the kind of thinking we employed when we came up with them."="لا يمكننا حل المشكلات بنوع التفكير الذي استخدمناه عندما توصلنا إليها.";
+//
+//"Learn as if you will live forever, live like you will die tomorrow."="تعلم كما لو كنت ستعيش إلى الأبد ، عش كما لو كنت ستموت غدًا.";
+//
+//"When you change your thoughts, remember to also change your world."="عندما تغير أفكارك ، تذكر أيضًا أن تغير عالمك.";
+//
+//"It is better to fail in originality than to succeed in imitation."="الفشل في الأصل خير من النجاح في التقليد.";
+//
+//"To know how much there is to know is the beginning of learning to live."="إن معرفة مقدار ما يجب معرفته هو بداية تعلم كيفية العيش.";
