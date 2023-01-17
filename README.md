@@ -1,12 +1,12 @@
 # Pmood                            
 
 
-### 1- Challenge Statement:
+### 1- Challenge Statement: 
 Make an inclusive solution that help Adults to deal with their feelings.
 
 
 ### 2- Solution Concept:
-A suggestions for adults who want to deal with their mood so that assist them in unwinding and relaxing more effectively.
+> - A suggestions for adults who want to deal with their mood so that assist them in unwinding and relaxing more effectively.
 
 ### 3- Technologies & Tools:
     . Swiftui
