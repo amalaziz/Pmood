@@ -11,7 +11,9 @@ import SwiftUI
 struct PmodeApp: App {
     var body: some Scene {
         WindowGroup {
-        Home()
+           
+                SplashScreenView()
+            
         }
     }
 }
