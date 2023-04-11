@@ -22,7 +22,12 @@ struct Home: View {
     
     @State private var cont = 0
     
-    let myArray = [["We cannot solve problems with the kind of thinking we employed when we came up with them.", "Albert Einstein"],["Learn as if you will live forever, live like you will die tomorrow.", "Mahatma Gandhi"],["When you change your thoughts, remember to also change your world.","Norman Vincent"],["It is better to fail in originality than to succeed in imitation.", "AHerman Melville"],["To know how much there is to know is the beginning of learning to live.", "Dorothy West"]]
+    let myArray = [
+        [Text("We cannot solve problems with the kind of thinking we employed when we came up with them."), Text("Albert Einstein")],
+        [Text("Learn as if you will live forever, live like you will die tomorrow."), Text("Mahatma Gandhi")],
+        [Text("When you change your thoughts, remember to also change your world."),Text("Norman Vincent")],
+        [Text("It is better to fail in originality than to succeed in imitation."),Text( "AHerman Melville")],
+        [Text("To know how much there is to know is the beginning of learning to live."), Text("Dorothy West")]]
     
     let myItem = Int.random(in: 0..<5)
     
@@ -31,8 +36,8 @@ struct Home: View {
         
         
         
-        let qu = myArray[myItem][0]
-        let name = myArray[myItem][1]
+        let qu : Text = myArray[myItem][0]
+        let name : Text = myArray[myItem][1]
         
         
         let colors = [
@@ -40,6 +45,8 @@ struct Home: View {
             Color(hex: 0xF9F7ED)
             // Color.yellow
         ]
+        
+      
         
         NavigationView {
             
@@ -53,29 +60,29 @@ struct Home: View {
             VStack{
                 
                 VStack{
-                    Text("")
-                        .navigationBarTitleDisplayMode(.inline)
-                        .toolbar {
-                            ToolbarItem(placement: .principal) {
-                                HStack {
-                                    Text("Pmode").font(.title2).fontWeight(.bold)
-                                }
-                            }
-                        }
+//                    Text("")
+//                        .navigationBarTitleDisplayMode(.inline)
+//                        .toolbar {
+//                            ToolbarItem(placement: .principal) {
+//                                HStack {
+//                                    Text("Pmood").font(.title2).fontWeight(.bold)
+//                                }
+//                            }
+//                        }
                     
                     
                     
                     
                     VStack{
-                    HStack{
-                        Image(systemName:"calendar")
-                            .font(.system(size: 14))
-                        Text("\(Date().displayFormat1)")
-                            .font(.subheadline).underline().fontWeight(.medium)
-                    }
-                   .padding(.bottom,10)
-                   .padding(.top,-30)
-                    .accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
+//                    HStack{
+//                        Image(systemName:"calendar")
+//                            .font(.system(size: 14))
+//                        Text("\(Date().displayFormat1)")
+//                            .font(.subheadline).underline().fontWeight(.medium)
+//                    }
+//                   .padding(.bottom,10)
+//                   .padding(.top,-30)
+//                    .accessibilityLabel(/*@START_MENU_TOKEN@*/"Label"/*@END_MENU_TOKEN@*/)
                     
                     
                     Text("Hello")
@@ -95,9 +102,8 @@ struct Home: View {
                         
                         VStack{
                             
-                            Text("\(qu)").padding(15)
-                            Text("- \(name)")
-                                .fontWeight(.bold)
+                            qu.padding(15)
+                            name.fontWeight(.bold)
                                 .multilineTextAlignment(.trailing).padding(.leading,130)//.padding(.top,10)
                         }
                     )
@@ -107,7 +113,7 @@ struct Home: View {
                         .font(.headline)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading).padding(.trailing,230)
-                    Text("Choose your mod today by clicking on it:")
+                    Text("Choose your mood today by clicking on it:")
                         .font(.subheadline)
                         .multilineTextAlignment(.leading).padding(.trailing,65).padding(.top,2)
                 }.padding(.top,15)
@@ -208,7 +214,7 @@ struct Home: View {
                 }.padding(.trailing,3).padding(.top,15)
                 )
                 
-                
+                ScrollView {
                 
                 Text("Roccmandition for you mood")
                     .font(.headline)
@@ -378,7 +384,7 @@ struct Home: View {
                             }
                         }.padding(.leading,15)
                     }.padding(.top,20)
-                }
+                } }
                 
                 Spacer()
             }.padding()
@@ -389,8 +395,9 @@ struct Home: View {
             
         }
     }
-        }
-}
+        
+        }}
+
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
